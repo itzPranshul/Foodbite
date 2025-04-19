@@ -7,8 +7,8 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #f36a38;
+    color: rgb(255, 255, 255);
   }
 
   .hero {
@@ -29,13 +29,14 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 40px; /* increased spacing */
+    gap: 400px; /* increased spacing */
     align-items: center;
+    margin-top: 20px;
   }
   
   
   .nav li {
-    margin: 0;
+    margin: 20px;
   }
   
   .get-started {
@@ -47,4 +48,8 @@ body {
     cursor: pointer;
   }
   
+  .header a {
+    text-decoration: none;
+    color: inherit; /* Optional: keeps the text color same as surrounding */
+  }
   
