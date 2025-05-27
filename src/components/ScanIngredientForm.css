@@ -1,0 +1,70 @@
+.scan-form-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.scan-form-container form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.scan-form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #2d89ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prediction-result {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 8px;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.prediction-result.healthy {
+  background-color: #e1fbe1;
+  color: #228b22;
+}
+
+.prediction-result.not-healthy {
+  background-color: #fdeaea;
+  color: #c62828;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.error {
+  margin-top: 1rem;
+  color: red;
+  font-weight: 600;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
